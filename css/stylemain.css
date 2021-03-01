@@ -78,14 +78,15 @@ p {
 
 .sns {
     
-    margin: 0% 43.5%; 
-    
+    margin: 0% 40%; 
+    width: 200px;
         padding: 0px 5px;
         text-decoration: none;
         list-style: none;
         box-sizing: border-box; 
-        margin-left: 50%;
-        margin-top: 1%;     
+        margin-left: 47%;
+        margin-top: 1%;  
+        
     
 }
 li {
