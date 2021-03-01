@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/stylemain.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+
+<h1>Pupeyo</h1>
+<span class="text1">My pseudonym is...</span>
+<div class="squarbg"></div>
+</div>
+<p>3D Modeling and Graphic Design.</p>
+<div class="sns">
+    <ul>
+        <li> <a href="https://www.instagram.com/_puutinx/"target="blank"><i class="fa fa-instagram" aria-hidden="true"> </i></a></li>
+        <li> <a href="https://twitter.com/puutinx"target="blank"><i class="fa fa-twitter" aria-hidden="true"> </i></a></li>
+    </ul>
+        
+    
+    </div>
+<div>
+<a href="portfolio.html" class="button">Portfolio</a>
+</div>
+
+
+    
+    
+        <form class="digiclock" action="Test.html" method="post">
+            <div id="Clock">
+                <h2>The time is now</h2>
+                <div id="time">
+                    <div><span id="hours">00</span><span>Hours</span></div>
+                    <div><span id="minutes">00</span><span>Minutes</span></div>
+                    <div><span id="seconds">00</span><span>Seconds</span></div>
+                    <div><span id="session">PM</span></div>
+    
+                </div>
+            </div>
+    
+            <script type="text/javascript">
+                function Clock() {
+                    var hours = document.getElementById('hours');
+                    var minutes = document.getElementById('minutes');
+                    var seconds = document.getElementById('seconds');
+                    var h = new Date().getHours();
+                    var m = new Date().getMinutes();
+                    var s = new Date().getSeconds();
+                    var session = "AM";
+                    if (h == 0) {
+                        h = 12;
+                    }
+                    if (h > 12) {
+                        h = h - 12;
+                        session = "PM";
+                    }
+    
+                    h = (h < 10) ? "0" + h : h;
+                    m = (m < 10) ? "0" + m : m;
+                    s = (s < 10) ? "0" + s : s;
+                    hours.innerHTML = h;
+                    minutes.innerHTML = m;
+                    seconds.innerHTML = s;
+                }
+                var interval = setInterval(Clock, 1000);
+            </script>
+    
+        </form>
+</body>
+</html>
